@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class UserTableSeeder extends Seeder
+class TypeTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,10 +11,10 @@ class UserTableSeeder extends Seeder
      */
     public function run()
     {
-        App\User::insert([
-        				'name'	=> 'Admin',
-        				'email'	=> 'admin',
-        				'password'	=> bcrypt('admin'),
+        App\Type::insert([
+        				['name'	=> 'None',],
+        				['name'	=> 'Cold',],
+        				['name'	=> 'Hot',],
         			]);
     }
 }
